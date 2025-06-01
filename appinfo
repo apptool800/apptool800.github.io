@@ -1,0 +1,36 @@
+{
+  "version_control": {
+    "latest_version_code": 1,
+    "compatibility_rules": [
+      {
+        "min_version_code": 0,
+        "max_version_code": 28,
+        "launch_mode": "force_dialog",
+        "dialog_config": {
+          "title": "强制更新",
+          "message": "当前版本已停用，请更新到最新版",
+          "positive_button": "立即更新",
+          "action": "exit_and_open_url",
+          "url": "https://app.com/download"
+        }
+      },
+      {
+        "min_version_code": 29,
+        "max_version_code": 29,
+        "launch_mode": "optional_dialog",
+        "dialog_config": {
+          "title": "推荐更新",
+          "message": "发现新版本，是否立即体验？",
+          "positive_button": "更新",
+          "negative_button": "取消",
+          "action": "open_url",
+          "url": "https://app.com/download"
+        }
+      },
+      {
+        "min_version_code": 30,
+        "launch_mode": "normal"
+      }
+    ]
+  }
+}
